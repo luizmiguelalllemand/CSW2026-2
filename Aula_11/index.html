@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tipografia - Sites 1 e 2</title>
+  <style>
+    /* ===== SITE 1: fontes do Google (sem download) ===== */
+    @import url('https://fonts.googleapis.com/css2?family=Sedan&family=Open+Sans&family=Lora&display=swap');
+
+    /* ===== SITE 2: fontes com download (arquivos na pasta fontes/) ===== */
+    @font-face {
+      font-family: 'Top Secret';
+      src: url('fontes/TopSecret.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Gimme Danger';
+      src: url('fontes/GimmeDanger.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'LL Cooper';
+      src: url('fontes/LLCooper.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    #site1 {
+      background: #f4f4f4;
+    }
+
+    #site2 {
+      background: #e8e0d0;
+    }
+
+    /* Site 1 */
+    #site1 h1 {
+      font-family: 'Sedan', serif;
+      font-size: 3em;
+    }
+
+    #site1 h2 {
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #site1 p {
+      font-family: 'Lora', serif;
+    }
+
+    /* Site 2 */
+    #site2 h1 {
+      font-family: 'Top Secret', fantasy;
+      font-size: 3em;
+    }
+
+    #site2 h2 {
+      font-family: 'Gimme Danger', fantasy;
+    }
+
+    #site2 p {
+      font-family: 'LL Cooper', serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <section id="site1">
+    <h1>Site 1 – Fontes do Google</h1>
+    <h2>Título h2 em Open Sans</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aut deleniti vitae temporibus adipisci accusamus
+      quis voluptatum doloribus incidunt! Este parágrafo usa a fonte Lora.</p>
+  </section>
+
+  <section id="site2">
+    <h1>Site 2 – Fontes com download</h1>
+    <h2>Título h2 em Gimme Danger</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aut deleniti vitae temporibus adipisci accusamus
+      quis voluptatum doloribus incidunt! Este parágrafo usa a fonte LL Cooper.</p>
+  </section>
+
+</body>
+
+</html>
