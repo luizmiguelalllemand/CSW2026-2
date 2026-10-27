@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #314252; 
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+header::before {
+    content: "LOGO";
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header > ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0 0 0 auto; 
+    padding: 0;
+}
+
+header > ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header nav {
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 83px); 
+    background-color: #314252;
+    padding-top: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+header nav ul li a:hover {
+    background-color: #263441;
+}
+
+section {
+    margin-left: 200px; 
+    padding: 30px;
+    flex: 1; 
+    background-color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.card {
+    background-color: #f2f4f6;
+    padding: 25px 20px;
+    border-radius: 5px; 
+    text-align: center; 
+    color: #333;
+    font-size: 14px;
+}
+
+.card-grande {
+    grid-column: span 2;
+}
+
+footer {
+    background-color: #314252;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    width: 100%;
+    z-index: 10;
+}
+
+footer p {
+    margin: 0;
+}
