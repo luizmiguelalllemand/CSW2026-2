@@ -1,0 +1,16 @@
+body {
+    background-color: #f1faff;
+    margin: auto;
+    max-width: 800px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+form {
+    background-color: #dadada;
+    border: 1px dashed #000000;
+    padding: 20px;
+    align-content: normal;
+}

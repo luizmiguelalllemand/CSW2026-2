@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inscrição para vaga de estágio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="titulo">
+            <h1>Inscrição para vaga de estágio</h1>
+            <p>Campos marcados com * são obrigatórios.</p>
+        </div>
+
+        <form action="/inscricao" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Dados pessoais</legend>
+
+                <p>
+                    <label for="nome">Nome completo *</label><br>
+                    <input type="text" id="nome" name="nome" autocomplete="name" required minlength="3" maxlength="100">
+                </p>
+
+                <p>
+                    <label for="email">E-mail *</label><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required maxlength="254">
+                </p>
+
+                <p>
+                    <label for="celular">Celular com DDD *</label><br>
+                    <input type="tel" id="celular" name="celular" autocomplete="tel" inputmode="tel" required
+                        pattern="\(?[1-9]{2}\)?\s?9\d{4}-?\d{4}" placeholder="(27) 99999-9999"
+                        title="Informe DDD e número, ex.: (27) 99999-9999" aria-describedby="dica-celular">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sobre a vaga</legend>
+
+                <p>
+                    <label for="area">Área de interesse *</label><br>
+                    <select id="area" name="area" required>
+                        <option value="" selected disabled>Selecione uma área</option>
+                        <option value="tecnologia">Tecnologia</option>
+                        <option value="administrativo">Administrativo</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="financeiro">Financeiro</option>
+                        <option value="recursos-humanos">Recursos Humanos</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="curriculo">Currículo (PDF) *</label><br>
+                    <input type="file" id="curriculo" name="curriculo" accept="application/pdf,.pdf" required>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="checkbox" id="lgpd" name="consentimento_lgpd" value="sim" required>
+                <label for="lgpd">
+                    Li e concordo com o tratamento dos meus dados pessoais para fins de
+                    processo seletivo, conforme a
+                    <a href="/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+                    (LGPD). *
+                </label>
+            </p>
+
+            <button type="submit">Enviar inscrição</button>
+        </form>
+    </main>
+</body>
+
+</html>
